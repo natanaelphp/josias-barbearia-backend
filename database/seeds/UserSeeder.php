@@ -9,19 +9,19 @@ class UserSeeder extends Seeder
     {
         $user->create([
             'name' => 'Josias',
-            'email' => 'josias@gmail.com',
+            'email' => 'josias@josiasbarbearia.com.br',
             'password' => bcrypt('teste'),
         ]);
 
         $user->create([
             'name' => 'Carlos',
-            'email' => 'carlos@gmail.com',
+            'email' => 'carlos@josiasbarbearia.com.br',
             'password' => bcrypt('teste'),
         ]);
 
         $user->create([
             'name' => 'Vitor',
-            'email' => 'vitor@gmail.com',
+            'email' => 'vitor@josiasbarbearia.com.br',
             'password' => bcrypt('teste'),
         ]);
     }
