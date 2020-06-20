@@ -16,8 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 $router->post('login', 'AuthController@login');
 
-$router->middleware('api')->group(function ($router) {
+$router->middleware('auth:api')->group(function ($router) {
     $router->post('logout', 'AuthController@logout');
     $router->post('refresh', 'AuthController@refresh');
     $router->get('me', 'AuthController@me');
+
+    $router->apiResource('clients', 'ClientController');
 });
