@@ -21,5 +21,8 @@ $router->middleware('auth:api')->group(function ($router) {
     $router->post('refresh', 'AuthController@refresh');
     $router->get('me', 'AuthController@me');
 
+    $router->get('services', 'ServiceController@index');
+
     $router->apiResource('clients', 'ClientController');
+    $router->apiResource('appointments', 'AppointmentController');
 });

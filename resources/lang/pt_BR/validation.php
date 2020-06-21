@@ -177,6 +177,9 @@ return [
         'year'      => 'ano',
         'description' => 'descrição',
         'password_confirmation' => 'confirmação da senha',
+
+        'client_id' => 'cliente',
+        'service_id' => 'serviço',
     ],
 
 ];

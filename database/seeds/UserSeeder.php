@@ -11,18 +11,21 @@ class UserSeeder extends Seeder
             'name' => 'Josias',
             'email' => 'josias@josiasbarbearia.com.br',
             'password' => bcrypt('teste'),
+            'admin' => true,
         ]);
 
         $user->create([
             'name' => 'Carlos',
             'email' => 'carlos@josiasbarbearia.com.br',
             'password' => bcrypt('teste'),
+            'admin' => false,
         ]);
 
         $user->create([
             'name' => 'Vitor',
             'email' => 'vitor@josiasbarbearia.com.br',
             'password' => bcrypt('teste'),
+            'admin' => false,
         ]);
     }
 }
