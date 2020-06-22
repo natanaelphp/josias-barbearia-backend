@@ -20,6 +20,10 @@ class AppointmentRepository extends AbstractRepository
             $query->where('user_id', $user->id);
         }
 
+        if ($user->admin and isset($filters['user_id'])) {
+            $query->where('user_id', $filters['user_id']);
+        }
+
         if (isset($filters['date'])) {
             $query->whereBetween('datetime', $filters['date']);
         }
