@@ -11,6 +11,8 @@
 - MySQL 5.7.30
 - Laravel Framework 7.16.1
 
+É necessário atender todos os [requisitos do Laravel 7](https://laravel.com/docs/7.x#server-requirements)
+
 ### Passo a passo para instalação
 
 Clonar o repositório
