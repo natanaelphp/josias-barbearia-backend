@@ -1,5 +1,16 @@
 # Josias Barbearia - Backend API
 
+## Conteúdo
+
+- [Informações](#informações)
+- [Instalação](#passo-a-passo-para-instalação)
+
+### Informações
+
+PHP 7.2.24
+MySQL 5.7.30
+Laravel Framework 7.16.1
+
 ### Passo a passo para instalação
 
 Clonar o repositório
